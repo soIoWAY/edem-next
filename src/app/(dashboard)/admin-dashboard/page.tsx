@@ -63,6 +63,7 @@ export default function AdminDashboardPage() {
 			body: JSON.stringify(body),
 			credentials: 'include',
 		})
+		closeAddModal()
 	}
 
 	const sendDelFormHandler = async (e: React.FormEvent) => {
@@ -77,6 +78,8 @@ export default function AdminDashboardPage() {
 			body: JSON.stringify(body),
 			credentials: 'include',
 		})
+
+		closeDelModal()
 	}
 	return (
 		<div className='flex justify-center flex-col items-center'>
